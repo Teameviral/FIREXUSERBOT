@@ -1,0 +1,1455 @@
+# Made by @Eviral
+# Don't remove these lines else gay..
+# Kang with credits..
+
+
+import asyncio
+
+from FIREX.utils import admin_cmd
+from userbot.cmdhelp import CmdHelp
+
+
+@bot.on(admin_cmd("hdd"))
+async def _(event):
+    if event.fwd_from:
+        return
+    animation_interval = 1
+    animation_ttl = range(0, 50)
+    await event.edit("Happy Diwali Dosto🤗")
+    animation_chars = [
+        """-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙""",
+        """💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+-#--💙happy💙diwali💙
+#----💙happy💙diwali💙
+#-----💙happy💙diwali💙
+#-----💙happy💙diwali💙
+#-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜""",
+        """"💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖 
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖""",
+        """❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖 
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖 
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙""",
+        """💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖 
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖 
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️""",
+        """💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+---💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💜happy💜diwali💜
+----💜happy💜diwali💜
+---💜happy💜diwali💜
+--💜happy💜diwali💜
+-💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💜happy💜diwali💜
+💜happy💜diwali💜
+💜happy💜diwali💜
+-💜happy💜diwali💜
+--💜happy💜diwali💜
+----💜happy💜diwali💜
+-----💜happy💜diwali💜
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+-----💖happy💖diwali💖
+----💖happy💖diwali💖
+---💖happy💖diwali💖
+--💖happy💖diwali💖
+-💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖 
+💖happy💖diwali💖
+💖happy💖diwali💖
+💖happy💖diwali💖
+-💖happy💖diwali💖
+--💖happy💖diwali💖
+---💖happy💖diwali💖
+----💖happy💖diwali💖 
+---💙happy💙diwali💙
+----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+-----💙happy💙diwali💙
+----💙happy💙diwali💙
+---💙happy💙diwali💙
+--💙happy💙diwali💙
+-💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+💙happy💙diwali💙
+-💙happy💙diwali💙
+--💙happy💙diwali💙
+--♥️happy❤️diwali♥️
+---❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+-----♥️happy❤️diwali♥️
+-----❤️happy♥️diwali❤️
+----♥️happy❤️diwali♥️
+---♥️happy❤️diwali❤️
+--♥️happy❤️diwali♥️
+-♥️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali❤️
+❤️happy♥️diwali♥️
+❤️happy♥️diwali♥️
+-❤️happy♥️diwali♥️
+-💚happy💚diwali💚
+--💚happy💚diwali💚
+---💚happy💚diwali💚
+----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+-----💚happy💚diwali💚
+----💚happy💚diwali💚
+---💚happy💚diwali💚
+--💚happy💚diwali💚
+-💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚
+💚happy💚diwali💚""",
+    ]
+
+    for i in animation_ttl:
+
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 6])
+
+
+@bot.on(admin_cmd("dosto"))
+async def _(event):
+    if event.fwd_from:
+        return
+    animation_interval = 1
+    animation_ttl = range(0, 20)
+    await event.edit("❤Happy Diwali Dosto❤")
+    animation_chars = [
+        "💖happy💖diwali💖",
+        "💙happy💙diwali💙",
+        "❤️happy♥️diwali❤️",
+        "💚happy💚diwali💚",
+        "💜happy💜diwali💜",
+    ]
+
+    for i in animation_ttl:
+
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 20])
+
+
+@bot.on(admin_cmd("diwali"))
+async def _(event):
+    if event.fwd_from:
+        return
+    animation_interval = 1
+    animation_ttl = range(0, 22)
+    await event.edit("❤Dosto❤")
+    animation_chars = [
+        """💜💜                        💜💜
+💜💜                        💜💜
+💜💜                        💜💜
+💜💜                        💜💜
+💜💜💜💜💜💜💜💜💜
+💜💜💜💜💜💜💜💜💜
+💜💜                        💜💜
+💜💜                        💜💜
+💜💜                        💜💜
+💜💜                        💜💜""",
+        """ㅤㅤㅤㅤㅤ ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+                    💙💙
+                 💙💙💙
+             💙💙💙💙
+            💙💙 💙💙
+          💙💙    💙💙
+        💙💙       💙💙
+     💙💙💙💙💙💙
+      💙💙💙💙💙💙
+   💙💙                 💙💙
+  💙💙                    💙💙
+💙💙                       💙💙""",
+        """💚💚💚💚💚💚💚
+💚💚💚💚💚💚💚💚
+💚💚                     💚💚
+💚💚                     💚💚
+💚💚💚💚💚💚💚💚
+💚💚💚💚💚💚💚
+💚💚
+💚💚
+💚💚
+💚💚""",
+        """💛💛💛💛💛💛
+💛💛💛💛💛💛💛
+💛💛                💛💛
+💛💛                💛💛
+💛💛💛💛💛💛💛
+💛💛💛💛💛💛
+💛💛
+💛💛
+💛💛
+💛💛""",
+        """💜💜                    💜💜
+   💜💜              💜💜
+      💜💜        💜💜
+         💜💜  💜💜
+            💜💜💜
+              💜💜
+              💜💜
+              💜💜
+              💜💜
+              💜💜""",
+        """💖💖💖💖💖💖💖
+💖💖💖💖💖💖💖💖
+💖💖                      💖💖
+💖💖                         💖💖
+💖💖                         💖💖
+💖💖                         💖💖
+💖💖                         💖💖
+💖💖                      💖💖
+💖💖💖💖💖💖💖💖
+💖💖💖💖💖💖💖""",
+        """💝💝💝💝💝💝
+💝💝💝💝💝💝
+          💝💝
+          💝💝
+          💝💝
+          💝💝
+          💝💝
+          💝💝
+💝💝💝💝💝💝
+💝💝💝💝💝💝""",
+        """💖💖                               💖💖
+💖💖                               💖💖
+💖💖                               💖💖
+💖💖                               💖💖
+💖💖              💖            💖💖
+ 💖💖           💖💖          💖💖
+ 💖💖        💖💖💖       💖💖
+  💖💖   💖💖  💖💖   💖💖
+   💖💖💖💖      💖💖💖💖
+    💖💖💖             💖💖💖""",
+        """ㅤㅤㅤㅤㅤ ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+                    💙💙
+                 💙💙💙
+             💙💙💙💙
+            💙💙 💙💙
+          💙💙    💙💙
+        💙💙       💙💙
+     💙💙💙💙💙💙
+      💙💙💙💙💙💙
+   💙💙                 💙💙
+  💙💙                    💙💙
+💙💙                       💙💙""",
+        """💘💘
+💘💘
+💘💘
+💘💘
+💘💘
+💘💘
+💘💘
+💘💘
+💘💘💘💘💘💘💘💘
+💘💘💘💘💘💘💘💘""",
+        """💝💝💝💝💝💝
+💝💝💝💝💝💝
+          💝💝
+          💝💝
+          💝💝
+          💝💝
+          💝💝
+          💝💝
+💝💝💝💝💝💝
+💝💝💝💝💝💝""",
+    ]
+
+    for i in animation_ttl:
+
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 22])
+
+
+from . import *
+
+
+@bot.on(admin_cmd(pattern="wishdiwali(.*)"))
+async def xd(event):
+    await event.edit("wishing to all.....")
+    event.pattern_match.group(1)
+    async for tele in borg.iter_dialogs():
+        lol = 0
+        done = 0
+        if tele.is_group:
+            chat = tele.id
+            try:
+                await bot.send_message(
+                    chat,
+                    f"⁭💖💖                        💖💖\n 💖💖                      💖💖\n💖💖                        💖💖\n💖💖                        💖💖\n💖💖💖💖💖💖💖💖💖\n💖💖💖💖💖💖💖💖💖\n💖💖                        💖💖\n💖💖                        💖💖\n💖💖                        💖💖\n💖💖                        💖💖\n\n                    💖\n                  💖💖\n               💖💖💖\n            💖💖 💖💖\n          💖💖    💖💖\n        💖💖       💖💖\n      💖💖💖💖💖💖\n     💖💖💖💖💖💖💖\n   💖💖                 💖💖\n  💖💖                    💖💖\n💖💖                       💖💖\n\n💗💗💗💗💗💗💗\n💗💗💗💗💗💗💗💗\n💗💗                     💗💗\n💗💗                     💗💗\n💗💗💗💗💗💗💗💗\n💗💗💗💗💗💗💗\n💗💗\n💗💗\n💗💗\n💗💗\n\n💗💗💗💗💗💗💗\n💗💗💗💗💗💗💗💗\n💗💗                     💗💗\n💗💗                     💗💗\n💗💗💗💗💗💗💗💗\n💗💗💗💗💗💗💗\n💗💗\n💗💗\n💗💗\n💗💗\n\n💙💙                    💙💙\n   💙💙              💙💙\n      💙💙        💙💙\n         💙💙  💙💙\n            💙💙💙\n              💙💙\n              💙💙\n              💙💙\n              💙💙\n              💙💙\n h💙💙💙💙💙💙💙\n💙💙💙💙💙💙💙💙\n💙💙                      💙💙\n💙💙                         💙💙\n💙💙                         💙💙\n💙💙                         💙💙\n💙💙                         💙💙\n💙💙                      💙💙\n💙💙💙💙💙💙💙💙\n💙💙💙💙💙💙💙\n\n💗💗💗💗💗💗\n💗💗💗💗💗💗\n          💗💗\n         💗💗\n          💗💗\n          💗💗\n          💗💗\n          💗💗\n💗💗💗💗💗💗\n💗💗💗💗💗💗\n⁭\n💗💗                               💗💗\n💗💗                               💗💗\n💗💗                               💗💗\n💗💗                               💗💗\n💗💗              💗            💗💗\n 💗💗           💗💗          💗💗\n 💗💗        💗💗💗       💗💗\n  💗💗   💗💗  💗💗   💗💗\n   💗💗💗💗      💗💗💗💗\n    💗💗💗             💗💗💗\n⁭\n                    💖\n                  💖💖\n               💖💖💖\n            💖💖 💖💖\n          💖💖    💖💖\n        💖💖       💖💖\n      💖💖💖💖💖💖\n     💖💖💖💖💖💖💖\n   💖💖                 💖💖\n  💖💖                    💖💖\n💖💖                       💖💖\n⁭\n💟💟\n💟💟\n💟💟\n💟💟\n💟💟\n💟💟\n💟💟\n💟💟\n💟💟💟💟💟💟💟💟\n💟💟💟💟💟💟💟💟\n⁭\n💗💗💗💗💗💗\n💗💗💗💗💗💗\n          💗💗\n          💗💗\n          💗💗\n          💗💗\n          💗💗\n          💗💗\n💗💗💗💗💗💗\n💗💗💗💗💗💗",
+                )
+                done += 1
+            except:
+                lol += 1
+    await event.reply(
+        f"happy Janmashtami from FIREX support\nthanks for using this Plugin."
+    )
+
+
+CmdHelp("diwali").add_command("hdd", None, "µรε αɳ∂ รεε").add_command(
+    "diwali", None, "մsɾ αղժ sҽҽ"
+).add_command("wishdiwali", None, "Use and See").add_info(
+    "Used To Wish Friend Of Diwali"
+).add_type(
+    "Addons"
+).add_warning(
+    "Harmless Module"
+).add()
