@@ -48,7 +48,7 @@ IFFUCI_ACTIVE_BRANCH_NAME = "master"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
 NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
 
-FIREX_info = "https://raw.githubusercontent.com/The-FIREX/eviralUSERBOT/FIREX/eviralboy-info.json"
+FIREX_info = "https://github.com/Teameviral/FIREXUSERBOT/blob/main/Firex-info.json"
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 requirements_path = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "requirements.txt"
@@ -136,7 +136,7 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     await event.edit(
-        "✅ Successfully updated eviralẞø†!\n\nBot is restarting please wait for a minute."
+        "✅ Successfully updated Firex!\n\nBot is restarting please wait for a minute."
     )
     args = [sys.executable, "-m", "userbot"]
     os.execle(sys.executable, *args, os.environ)
