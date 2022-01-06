@@ -2,7 +2,7 @@ import os
 import sys
 
 from FIREX.utils import admin_cmd, eor, sudo_cmd
-from userbot import HEROKU_APP, eviralversion, bot
+from userbot import HEROKU_APP, bot, eviralversion
 from userbot.cmdhelp import CmdHelp
 from userbot.helpers.runner import reload_FIREX
 

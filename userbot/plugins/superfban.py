@@ -344,11 +344,7 @@ async def _(event):
             await event.edit("Something went wrong.")
             return
     except:
-        if (
-            FBAN == "@Eviral"
-            or FBAN == "@FirexSupport"
-            or FBAN == "@eviral_CoOwnerr"
-        ):
+        if FBAN == "@Eviral" or FBAN == "@FirexSupport" or FBAN == "@eviral_CoOwnerr":
             await event.edit("Something went wrong.")
             return
     if FBAN_GROUP_ID:

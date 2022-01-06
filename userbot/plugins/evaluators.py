@@ -86,14 +86,10 @@ async def _(event):
         # "**Eval Command Executed. Check out LOGGER_ID Group[Private Group Where All Message Forward]for result.**",
         # )
         if "session" in cmd:
-            await eor(
-                event, "String is a  Sensetive Data.\nSo, Its Protected By FIREX"
-            )
+            await eor(event, "String is a  Sensetive Data.\nSo, Its Protected By FIREX")
             return
         if "eviral_STRING" in cmd:
-            await eor(
-                event, "String is a  Sensetive Data.\nSo, Its Protected By FIREX"
-            )
+            await eor(event, "String is a  Sensetive Data.\nSo, Its Protected By FIREX")
             return
         else:
             await eor(

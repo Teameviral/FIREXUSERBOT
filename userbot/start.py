@@ -4,7 +4,7 @@ from pathlib import Path
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.types import InputMessagesFilterDocument
 
-from userbot import eviralversion, bot
+from userbot import bot, eviralversion
 from userbot.Config import Config
 from userbot.utils import (
     load_abuse,

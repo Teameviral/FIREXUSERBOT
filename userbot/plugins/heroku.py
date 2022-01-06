@@ -50,9 +50,7 @@ async def variable(var):
             variable = var.pattern_match.group(2).split()[0]
             eviral = "**ConfigVars**:" f"\n\n {variable} = `{heroku_var[variable]}`\n"
             if "eviral_STRING" in variable:
-                await eor(
-                    var, "eviral String is a Sensetive Data.\nProtected By FIREX"
-                )
+                await eor(var, "eviral String is a Sensetive Data.\nProtected By FIREX")
                 return
             elif variable in heroku_var:
                 await eor(var, eviral)

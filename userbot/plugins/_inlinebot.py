@@ -170,11 +170,7 @@ if Config.BOT_USERNAME is not None and firebot is not None:
                 Config.BOY_OR_GIRL,
             )
             alv_btn = [
-                [
-                    Button.url(
-                        f"{eviral_USER}", f"tg://openmessage?user_id={Eviral}"
-                    )
-                ],
+                [Button.url(f"{eviral_USER}", f"tg://openmessage?user_id={Eviral}")],
                 [
                     Button.url("My Channel", f"https://t.me/{my_channel}"),
                     Button.url("My Group", f"https://t.me/{my_group}"),
@@ -204,11 +200,7 @@ if Config.BOT_USERNAME is not None and firebot is not None:
                 )
         elif event.query.user_id == bot.uid and query == "fsub":
             fsub_btn = [
-                [
-                    Button.url(
-                        f"{eviral_USER}", f"tg://openmessage?user_id={Eviral}"
-                    )
-                ],
+                [Button.url(f"{eviral_USER}", f"tg://openmessage?user_id={Eviral}")],
                 [
                     Button.url("📍My Channel📍", f"https://t.me/{my_channel}"),
                     Button.url("💝My Group💝", f"https://t.me/{my_group}"),
@@ -261,11 +253,7 @@ if Config.BOT_USERNAME is not None and firebot is not None:
                 Config.LOGGER_ID,
             )
             var_btn = [
-                [
-                    Button.url(
-                        f"{eviral_USER}", f"tg://openmessage?user_id={Eviral}"
-                    )
-                ],
+                [Button.url(f"{eviral_USER}", f"tg://openmessage?user_id={Eviral}")],
                 [
                     Button.url("🔹️Command🔹️", f"http://telegra.ph/Astronomer-10-07"),
                 ],

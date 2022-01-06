@@ -8,7 +8,7 @@ os.system("pip install telethon==1.24.0")
 import telethon.utils
 from telethon import Button, TelegramClient, custom, events
 
-from userbot import LOGS, eviralversion, bot
+from userbot import LOGS, bot, eviralversion
 from userbot.Config import Config
 from var import Var
 

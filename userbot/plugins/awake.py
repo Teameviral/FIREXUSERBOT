@@ -3,7 +3,7 @@ import time
 from telethon import version
 
 from FIREX.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot import eviralversion, StartTime
+from userbot import StartTime, eviralversion
 from userbot.cmdhelp import CmdHelp
 
 from . import *
