@@ -25,7 +25,7 @@ UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "main"
 NO_HEROKU_APP_CFGD = "No Heroku App Found!"
-HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
+HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/main"
 RESTARTING_APP = "Restarting Heroku App..."
 IS_SELECTED_DIFFERENT_BRANCH = (
     "looks like a custom branch {branch_name} "
@@ -180,7 +180,7 @@ async def upstream(event):
     if ac_br != UPSTREAM_REPO_BRANCH:
         await event.edit(
             f"`Looks like you are using your own custom git branch ( {ac_br} ). "
-            "Please checkout to official branch that is ( master )`"
+            "Please checkout to official branch that is ( main )`"
         )
         return repo.__del__()
     try:
@@ -247,8 +247,8 @@ async def upstream(event):
         repo = Repo.init()
         origin = repo.create_remote("upstream", off_repo)
         origin.fetch()
-        repo.create_head("main", origin.refs.master)
-        repo.heads.master.set_tracking_branch(origin.refs.master)
+        repo.create_head("main", origin.refs.main)
+        repo.heads.master.set_tracking_branch(origin.refs.main)
         repo.heads.master.checkout(True)
     try:
         repo.create_remote("upstream", off_repo)
@@ -273,7 +273,7 @@ async def upstream(event):
         repo = git.Repo.init()
         origin = repo.create_remote(REPO_REMOTE_NAME, OFFICIAL_UPSTREAM_REPO)
         origin.fetch()
-        repo.create_head(IFFUCI_ACTIVE_BRANCH_NAME, origin.refs.master)
+        repo.create_head(IFFUCI_ACTIVE_BRANCH_NAME, origin.refs.main)
         repo.heads.master.checkout(True)
 
     active_branch_name = repo.active_branch.name
@@ -389,7 +389,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         else:
             remote = repo.create_remote("heroku", heroku_git_url)
         try:
-            remote.push(refspec="HEAD:refs/heads/master", force=True)
+            remote.push(refspec="HEAD:refs/heads/main", force=True)
         except Exception as error:
             await event.edit(f"{txt}\n**Error log:**\n`{error}`")
             return repo.__del__()
