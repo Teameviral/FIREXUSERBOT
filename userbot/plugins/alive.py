@@ -6,7 +6,7 @@ from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 
 from FIREX.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot import ALIVE_NAME, eviralversion
-from userbot.cmdhelp import CmdHelp#eviral
+from userbot.cmdhelp import CmdHelp  # eviral
 from userbot.Config import Config
 
 from . import *
