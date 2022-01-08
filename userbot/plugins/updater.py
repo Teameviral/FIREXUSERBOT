@@ -8,7 +8,6 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
 from userbot import *
 from userbot.Config import Config
-from userbot.plugins.invite import get_chatinfo  
 
 from . import *
 
