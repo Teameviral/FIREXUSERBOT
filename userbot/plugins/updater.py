@@ -159,7 +159,7 @@ async def upstream(event):
         txt = "😕 `Updater cannot continue due to some problems occured`\n\n**LOGTRACE:**\n"
         repo = Repo()
     except NoSuchPathError as error:
-        await event.edit(f"{txt}\n`directory {error}  not found`")
+        await event.edit(f"{txt}\n`directory {error} is not found`")
         return repo.__del__()
     except GitCommandError as error:
         await event.edit(f"{txt}\n`Early failure! {error}`")
@@ -167,16 +167,16 @@ async def upstream(event):
     except InvalidGitRepositoryError as error:
         if conf is None:
             return await event.edit(
-                f"`The directory {error} "
+                f"`Unfortunately, the directory {error} "
                 "does not seem to be a git repository.\n"
-                "Fix that by force updating! Using "
-                f"`.update now.`"
+                "But we can fix that by force updating the userbot using "
+                ".update now.`"
             )
         repo = Repo.init()
         origin = repo.create_remote("upstream", off_repo)
         origin.fetch()
         force_update = True
-        repo.create_head("main", origin.refs.master)
+        repo.create_head("master", origin.refs.master)
         repo.heads.master.set_tracking_branch(origin.refs.master)
         repo.heads.master.checkout(True)
     ac_br = repo.active_branch.name
