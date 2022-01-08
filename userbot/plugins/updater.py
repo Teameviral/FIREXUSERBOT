@@ -8,6 +8,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
 from userbot import *
 from userbot.Config import Config
+from userbot.plugins.invite import get_chatinfo  
 
 from . import *
 
@@ -51,7 +52,7 @@ async def updateme_requirements():
 async def upstream(ups):
     "For .update command, check if the bot is up to date, update if specified"
     await ups.edit("** Checking for new updates 🧐🧐**")
-    conf = ups.pattern_match.group(1).strip()
+    conf = ups.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_updateme = False
 
