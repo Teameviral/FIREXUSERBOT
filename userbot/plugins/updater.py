@@ -9,9 +9,11 @@ from userbot import *
 
 from . import *
 
-requirements_path = path.join(
-    path.dirname(path.dirname(path.dirname(__file__))), "requirements.txt"
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+requirements_path = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "requirements.txt"
 )
+
 
 HEROKU_API_KEY = config.HEROKU_API_KEY
 HEROKU_APP_NAME = config.HEROKU_APP_NAME
