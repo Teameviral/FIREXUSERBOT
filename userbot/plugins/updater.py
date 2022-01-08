@@ -17,10 +17,13 @@ HEROKU_APP_NAME = Config.HEROKU_APP_NAME or None
 HEROKU_API_KEY = Config.HEROKU_API_KEY or None
 Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
-
+UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO", None)
+if UPSTREAM_REPO_URL is None:
+    DEFAULT_URL = "https://github.com/Teameviral/FIREXUSERBOT"
+else:
+    DEFAULT_URL = UPSTREAM_REPO_URL
 UPSTREAM_REPO_BRANCH = "main"
 
-UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "main"
