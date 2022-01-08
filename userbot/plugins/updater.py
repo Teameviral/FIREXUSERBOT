@@ -1,8 +1,7 @@
-import os
-from os import remove, execle, path, makedirs, getenv, environ
-from shutil import rmtree
 import asyncio
+import os
 import sys
+from os import environ, execle, remove
 
 import urllib3
 from git import Repo
