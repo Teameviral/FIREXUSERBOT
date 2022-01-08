@@ -7,7 +7,7 @@ from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
 from userbot import *
-
+from Config import Config
 from . import *
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -50,7 +50,7 @@ async def updateme_requirements():
 async def upstream(ups):
     "For .update command, check if the bot is up to date, update if specified"
     await ups.edit("** Checking for new updates 🧐🧐**")
-    conf = ups.pattern_match.group(1)
+    conf = ups.pattern_match.group(1).strip()
     off_repo = UPSTREAM_REPO_URL
     force_updateme = False
 
