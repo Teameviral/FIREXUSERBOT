@@ -24,7 +24,7 @@ else:
     DEFAULT_URL = UPSTREAM_REPO_URL
 UPSTREAM_REPO_BRANCH = "main"
 
-
+ac_br = "main"
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "main"
 NO_HEROKU_APP_CFGD = "No Heroku App Found!"
@@ -176,14 +176,14 @@ async def upstream(event):
         origin = repo.create_remote("upstream", off_repo)
         origin.fetch()
         force_update = True
-        repo.create_head("master", origin.refs.master)
+        repo.create_head("main", origin.refs.master)
         repo.heads.master.set_tracking_branch(origin.refs.master)
         repo.heads.master.checkout(True)
     ac_br = repo.active_branch.name
     if ac_br != "main":
         await event.edit(
-            f"`Looks like you are using your own custom git branch ( {ac_br} ). "
-            "Please checkout to official branch that is ( main )`"
+            f"`Looks like you are using your own custom git branch ( main ). "
+            "Please checkout to official branch that is ( {ac_br} )`"
         )
         return repo.__del__()
     try:
@@ -192,7 +192,7 @@ async def upstream(event):
         pass
     ups_rem = repo.remote("upstream")
     ups_rem.fetch(ac_br)
-    changelog = await gen_chlog(repo, f"HEAD..upstream/main")
+    changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if changelog == "" and not force_update:
         await event.edit(
             "\n**😎 FIRE-X is UP-TO-DATE.**"
