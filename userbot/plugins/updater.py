@@ -1,5 +1,5 @@
 import asyncio
-import sys  # mrunal
+import sys  
 from os import environ, execle, remove
 
 import urllib3
@@ -15,9 +15,10 @@ requirements_path = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "requirements.txt"
 )
 
+# WaQT BaDaL GYa JazBaaT BaDaL GYe
 
-HEROKU_API_KEY = config.HEROKU_API_KEY
-HEROKU_APP_NAME = config.HEROKU_APP_NAME
+HEROKU_API_KEY = Config.HEROKU_API_KEY
+HEROKU_APP_NAME = Config.HEROKU_APP_NAME
 GIT_REPO_NAME = "Teameviral"
 UPSTREAM_REPO_URL = "https://github.com/Teameviral/FIREXUSERBOT"
 
