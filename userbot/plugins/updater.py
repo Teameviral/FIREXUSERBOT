@@ -1,7 +1,7 @@
 import asyncio
 import sys  # mrunal
 from os import environ, execle, remove
-
+import urllib3
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
