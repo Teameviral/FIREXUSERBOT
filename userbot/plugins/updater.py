@@ -1,5 +1,5 @@
 import asyncio
-import sys  
+import sys
 from os import environ, execle, remove
 
 import urllib3
