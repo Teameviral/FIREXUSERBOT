@@ -28,7 +28,6 @@ async def aexec(code, event):
 
 
 @firebot.on(events.NewMessage(pattern="/eval"))
-@god_only
 async def _(event):
     rk = await event.reply("`....`")
     try:
