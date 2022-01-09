@@ -22,7 +22,7 @@ from userbot.plugins.sql_helper.idadder import (
 async def start(event):
     codetechbot = await firebot.get_me()
     bot_id = codetechbot.first_name
-    bot_username = codetechbot.username
+    codetechbot.username
     codetechbot.username
     replied_user = await event.client(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
@@ -34,7 +34,9 @@ async def start(event):
             message=f"Hi Sir/Miss, It's Me {bot_id}, Your Assistant ! \nHow Can I help U?",
             buttons=[
                 [
-                    Button.url("Add Me to Group 👥", "t.me/{bot_username}?startgroup=true")
+                    Button.url(
+                        "Add Me to Group 👥", "t.me/{bot_username}?startgroup=true"
+                    )
                 ],
                 [
                     Button.url(" Support ", "https://t.me/FirexSupport"),
@@ -81,7 +83,8 @@ async def help(event):
                 [Button.url("Github Repo ❓", "github.com/TeamEviral/FIREXUSERBOT")],
             ],
         )
-        
+
+
 @firebot.on(events.callbackquery.CallbackQuery(data=re.compile(b"fire")))
 async def help(event):
     await event.delete()
