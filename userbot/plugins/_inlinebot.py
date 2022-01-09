@@ -24,7 +24,7 @@ alive_emoji = Config.ALIVE_EMOJI or "⚜"
 eviral_pic = Config.PM_PIC or "https://telegra.ph/file/b76f4a906f05c059e046a.jpg"
 cstm_pmp = Config.PM_MSG
 ALV_PIC = Config.ALIVE_PIC
-help_pic = Config.HELP_PIC
+help_pic = "https://telegra.ph/file/b76f4a906f05c059e046a.jpg"
 VAR_PIC = Config.ALIVE_PIC
 PREV_REPLY_MESSAGE = {}
 mybot = Config.BOT_USERNAME
@@ -414,28 +414,28 @@ if Config.BOT_USERNAME is not None and firebot is not None:
             fck_bit = f"Oh! C'mon Master{eviral_mention} Im Try To Get Rid Of This Nigga Pls Dont Touch"
             await eviral.answer(fck_bit, cache_time=0, alert=True)
             return
-        else:
-            await eviral.get_chat()
-            await eviral.edit("Okay let Me Think🤫")
-            await asyncio.sleep(2)
-            await eviral.edit("Okay Giving You A Chance🤨")
-            await asyncio.sleep(2)
-            await eviral.edit(
-                "Will You Spam?",
-                buttons=[
-                    [Button.inline("Yes", data="lemme_ban")],
-                    [Button.inline("No", data="hmm")],
-                ],
-            )
+        await eviral.get_chat()
+        eviral_id = eviral.query.user_id
+        await eviral.edit("Okay let Me Think🤫")
+        await asyncio.sleep(2)
+        await eviral.edit("Okay Giving You A Chance🤨")
+        await asyncio.sleep(2)
+        await eviral.edit(
+            "Will You Spam?",
+            buttons=[
+                [Button.inline("Yes", data="lemme_ban")],
+                [Button.inline("No", data="hmm")],
+            ],
+        )
 
-            reqws = "`Warning`- ❗️⚠️Don't send any message now wait kindly!!!❗️⚠️"
+        reqws = "`Warning`- ❗️⚠️Don't send any message now wait kindly!!!❗️⚠️"
 
-            await bot.send_message(eviral.query.user_id, reqws)
-            await bot.send_message(
-                LOG_GP,
-                message=f"Hello, Master  [Nibba](tg://user?id={eviral_id}). Wants To Request Something.",
-                buttons=[Button.url("Contact Him", f"tg://user?id=eviral_id")],
-            )
+        await bot.send_message(eviral.query.user_id, reqws)
+        await bot.send_message(
+            LOG_GP,
+            message=f"Hello, Master  [Nibba](tg://user?id={eviral_id}). Wants To Request Something.",
+            buttons=[Button.url("Contact Him", f"tg://user?id=eviral_id")],
+        )
 
     @firebot.on(events.callbackquery.CallbackQuery(data=re.compile(b"hmm")))
     async def yes_ucan(eviral):
