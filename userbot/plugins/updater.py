@@ -11,6 +11,8 @@ from userbot import *
 from userbot.Config import Config
 
 from . import *
+
+
 # try
 async def get_chatinfo(event):
     chat = event.pattern_match.group(1)
@@ -36,15 +38,18 @@ async def get_chatinfo(event):
             await event.reply("`Invalid channel/group`")
             return None
         except ChannelPrivateError:
-            await event.reply("`This is a private channel/group or I am banned from there`")
+            await event.reply(
+                "`This is a private channel/group or I am banned from there`"
+            )
             return None
         except ChannelPublicGroupNaError:
             await event.reply("`Channel or supergroup doesn't exist`")
             return None
-        except (TypeError, ValueError) as err:
+        except (TypeError, ValueError):
             await event.reply("`Invalid channel/group`")
             return None
     return chat_info
+
 
 # ALaG Hii Chiz Hai
 
