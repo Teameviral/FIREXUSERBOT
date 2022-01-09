@@ -16,12 +16,12 @@ from . import *
 # try
 async def get_chatinfo(event):
     chat = event.pattern_match.group(1)
-    chat_info = None
     if chat:
         try:
             chat = int(chat)
         except ValueError:
             pass
+
 
 # ALaG Hii Chiz Hai
 
