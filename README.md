@@ -34,8 +34,17 @@ It is not like the other bots which are being Suspended by Heroku. Hence, it can
 ## Unique Features
    - Easy to Deploy at any server except Railway.
    - Completely Hacked Free. None can get your string until you give them directly.
-   - Easy Update System
+   - Easy Update System.
    - Fully Open Source. We don't hide anything from you.
    - 900+ Plugins.
+   - All in one userbot in Telethon..
    
-## Old Repo is [Here](https://github.com/TeamEviral/Fire-X)
+## Old Repo is [Here](https://github.com/TeamEviral/Fire-X).
+   
+## Credits
+   - [Lonami](t.me/lonami) for making Telethon Lib.
+   - [Avishek](t.me/wbavishek) for making another examples codes in Telethon and specially updating this repo.
+   - [Eviral](t.me/eviral) for making this repo and codes.
+   - [Aman](t.me/CopyLess786) for contributing on this repo.
+   - [Mrunal](t.me/Godmrunal) for contributing on this repo.
+   - [LEGEND-KRISHNA](t.me/The_LegendBoy) for making this base repo and contributing on this repo.
