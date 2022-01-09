@@ -52,6 +52,12 @@ FROM
    - All in one userbot in Telethon..
    
 ## Old Repo is [Here](https://github.com/TeamEviral/Fire-X).
+
+# SUPPORT 
+
+<a href="https://telegram.me/FIRE_X_CHANNEL" target="_blank"><img src="https://img.shields.io/badge/Join-Channel-yellow.svg?style=for-the-badge&logo=Telegram"></a>
+
+<a href="https://telegram.me/FIREXSUPPORT" target="_blank"><img src="https://img.shields.io/badge/Join-Support%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
    
 ## Credits
    - [Lonami](t.me/lonami) for making Telethon Lib.
