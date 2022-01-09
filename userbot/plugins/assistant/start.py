@@ -40,7 +40,8 @@ async def start(event):
                 [custom.Button.inline("Settings", data="osg")],
                 [custom.Button.inline("HACK", data="hack")],
             ],
-                [Button.url("Add Me to Group 👥", f"t.me/{bot_username}?startgroup=true")],           
+                [Button.url("Add Me to Group 👥", f"t.me/{bot_username}?startgroup=true")],
+            ],            
         )
     else:
         if already_added(event.sender_id):
