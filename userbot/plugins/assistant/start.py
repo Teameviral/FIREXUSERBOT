@@ -54,7 +54,7 @@ async def start(event):
                     custom.Button.inline(" Rules ", data="rules"),
                     custom.Button.inline(" Close ", data="close"),
                 ],
-                [custom.Button.inline("Contact Us", data="contact_")],
+                [custom.Button.inline("Contact", data="contact_")],
             ],
         )
 
@@ -64,9 +64,8 @@ async def start(event):
 
 @firebot.on(events.callbackquery.CallbackQuery(data=re.compile(b"rules")))
 async def help(event):
-    if event.query.user_id == bot.uid:
-        await event.answer("This Is Not For U My Master", cache_time=0, alert=True)
-    else:
+    await event.delete()
+    if event.query.user_id is not bot.uid:
         await firebot.send_message(
             event.chat_id,
             message="🔰Rᴇᴀᴅ Tʜᴇ Rᴜʟᴇꜱ Tᴏᴏ🔰\n\n🔹 Dᴏɴ'ᴛ Sᴩᴀᴍ\n🔹 ᴛᴀʟᴋ Fʀɪᴇɴᴅʟy\n🔹 Dᴏɴ'ᴛ Bᴇ Rᴜᴅᴇ\n🔹 Sᴇɴᴅ Uʀ Mᴇꜱꜱᴀɢᴇꜱ Hᴇʀᴇ\n🔹 Nᴏ Pᴏʀɴᴏɢʀᴀᴘʜʏ\n🔹 Dᴏɴ'ᴛ Wʀɪᴛᴇ Bᴀᴅ Wᴏʀᴅs.\n\nWʜᴇɴ I Gᴇᴛ Fʀᴇᴇ Tɪᴍᴇ , I'ʟʟ Rᴇᴩʟy U 💯✅",
@@ -74,11 +73,11 @@ async def help(event):
                 [custom.Button.inline("Back", data="osg")],
             ],
         )
-    context.bot.answer_callback_query(query.id)
 
 
 @firebot.on(events.callbackquery.CallbackQuery(data=re.compile(b"contact_")))
 async def help(event):
+    await event.delete()
     if event.query.user_id == bot.uid:
         await event.answer("This Is Not For U My Master", cache_time=0, alert=True)
     else:
@@ -89,7 +88,6 @@ async def help(event):
                 [custom.Button.inline("Back", data="osg")],
             ],
         )
-    context.bot.answer_callback_query(query.id)
 
 
 # Bot Permit.
