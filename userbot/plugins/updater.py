@@ -46,15 +46,15 @@ IFFUCI_ACTIVE_BRANCH_NAME = "main"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
 NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
 
-FIREX_info = "https://github.com/Teameviral/FIREXUSERBOT/blob/main/Firex-info.json"
+FIREX_info = "https://raw.githubusercontent.com/Teameviral/FIREXUSERBOT/main/Firex-info.json"
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 requirements_path = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "requirements.txt"
 )
 
 
-async def eviral_info(FOREX_info):
-    infos = requests.get(FIREX - INFO).json()
+async def eviral_info(FIREX_info):
+    infos = requests.get(FIREX_info).json()
     _version = infos["FIREX-INFO"]["version"]
     _release = infos["FIREX-INFO"]["release-date"]
     _branch = infos["FIREX-INFO"]["branch"]
