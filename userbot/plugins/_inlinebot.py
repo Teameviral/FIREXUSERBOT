@@ -308,15 +308,15 @@ if Config.BOT_USERNAME is not None and firebot is not None:
         else:
             result = builder.photo(
                 ALV_PIC,
-                text="""Hey! This is [FIRE-X](https://t.me/Official_FIREX) \nYou can know more about me from the links given below 👇""",
+                text="""Hey! This is [FIRE-X](https://t.me/FIREXUB) \nYou can know more about me from the links given below 👇""",
                 buttons=[
                     [
                         custom.Button.url(
-                            "⭐ Repo ⭐", "https://Github.com/Teameviral/FIREX"
+                            "⭐ Repo ⭐", "https://Github.com/Teameviral/FIREXUSERBOT"
                         ),
                         custom.Button.url(
                             "⚡ Repl ⚡",
-                            "https://replit.com/@KrishnaJaiswal1/FIREX#main.py",
+                            "https://replit.com/@Teameviral/Firex-1#main.py",
                         ),
                     ],
                 ],
