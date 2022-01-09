@@ -34,14 +34,17 @@ async def start(event):
             message=f"Hi Sir/Miss, It's Me {bot_id}, Your Assistant ! \nHow Can I help U?",
             buttons=[
                 [
+                    Button.url(
+                        "Add Me to Group 👥", f"t.me/{bot_username}?startgroup=true"
+                    )
+                ],
+                [
                     Button.url(" Support ", "https://t.me/FirexSupport"),
                     Button.url(" Updates ", "https://t.me/FIREXUB"),
                 ],
                 [custom.Button.inline("Settings", data="osg")],
-                [custom.Button.inline("HACK", data="hack")],
+                [custom.Button.inline("Hack", data="hack")],
             ],
-                [Button.url("Add Me to Group 👥", f"t.me/{bot_username}?startgroup=true")],
-        ),            
         )
     else:
         if already_added(event.sender_id):
