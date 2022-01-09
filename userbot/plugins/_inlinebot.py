@@ -255,7 +255,7 @@ if Config.BOT_USERNAME is not None and firebot is not None:
             var_btn = [
                 [Button.url(f"{eviral_USER}", f"tg://openmessage?user_id={Eviral}")],
                 [
-                    Button.url("🔹️Command🔹️", f"http://telegra.ph/Astronomer-10-07"),
+                    Button.url("🔹️Command🔹️", f"http://telegra.ph/"),
                 ],
             ]
             if VAR_PIC and VAR_PIC.endswith((".jpg", ".png")):
@@ -286,12 +286,12 @@ if Config.BOT_USERNAME is not None and firebot is not None:
                 title="Repository",
                 text=f"**⚜  FIRE_X ⚜**",
                 buttons=[
-                    [Button.url("♥️ Tutorial ♥", "https://youtu.be/9dQgdUJfk_k")],
-                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/Teameviral/FIREX")],
+                    [Button.url("♥️ Session ♥", "https://replit.com/@Teameviral/Firex-1#main.py")],
+                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/Teameviral/FIREXUSERBOT")],
                     [
                         Button.url(
                             "💞 Deploy 💞",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FTeameviral%2FFIREX&template=https%3A%2F%2Fgithub.com%2FTeameviral%2FFIREX",
+                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FTeameviral%2FFIREXUSERBOT&template=https%3A%2F%2Fgithub.com%2FTeamEviral%2FFIREX",
                         )
                     ],
                 ],
