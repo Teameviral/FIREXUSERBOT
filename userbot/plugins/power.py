@@ -8,6 +8,7 @@ from userbot.helpers.runner import reload_FIREX
 
 
 @bot.on(admin_cmd(pattern="restart"))
+@bot.on(sudo_cmd(pattern="restart$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
