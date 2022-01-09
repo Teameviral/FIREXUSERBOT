@@ -1,15 +1,16 @@
-from . import *
 import asyncio
 import os
 import sys
-import heroku3
-import requests
+
 import urllib3
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
+
 from userbot import *
 from userbot.Config import Config
+
 from . import *
+
 
 # try
 async def get_chatinfo(event):
