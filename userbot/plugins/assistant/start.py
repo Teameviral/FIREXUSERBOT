@@ -34,10 +34,10 @@ async def start(event):
             buttons=[
                 [
                     Button.url(" Support ", "https://t.me/FirexSupport"),
-                    Button.url(" Updates ", "https://t.me/Official_FIREX"),
+                    Button.url(" Updates ", "https://t.me/FIREXUB"),
                 ],
                 [custom.Button.inline("Settings", data="osg")],
-                [custom.Button.inline("Hack", data="hack")],
+                [custom.Button.inline("HELP", data="hack")],
             ],
         )
     else:
@@ -64,8 +64,9 @@ async def start(event):
 
 @firebot.on(events.callbackquery.CallbackQuery(data=re.compile(b"rules")))
 async def help(event):
-    await event.delete()
-    if event.query.user_id is not bot.uid:
+    if event.query.user_id == bot.uid:
+        await event.answer("This Is Not For U My Master", cache_time=0, alert=True)
+    else:
         await firebot.send_message(
             event.chat_id,
             message="🔰Rᴇᴀᴅ Tʜᴇ Rᴜʟᴇꜱ Tᴏᴏ🔰\n\n🔹 Dᴏɴ'ᴛ Sᴩᴀᴍ\n🔹 ᴛᴀʟᴋ Fʀɪᴇɴᴅʟy\n🔹 Dᴏɴ'ᴛ Bᴇ Rᴜᴅᴇ\n🔹 Sᴇɴᴅ Uʀ Mᴇꜱꜱᴀɢᴇꜱ Hᴇʀᴇ\n🔹 Nᴏ Pᴏʀɴᴏɢʀᴀᴘʜʏ\n🔹 Dᴏɴ'ᴛ Wʀɪᴛᴇ Bᴀᴅ Wᴏʀᴅs.\n\nWʜᴇɴ I Gᴇᴛ Fʀᴇᴇ Tɪᴍᴇ , I'ʟʟ Rᴇᴩʟy U 💯✅",
