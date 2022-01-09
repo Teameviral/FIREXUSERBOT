@@ -22,6 +22,7 @@ from userbot.plugins.sql_helper.idadder import (
 async def start(event):
     codetechbot = await firebot.get_me()
     bot_id = codetechbot.first_name
+    bot_username = codetechbot.username
     codetechbot.username
     replied_user = await event.client(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
@@ -39,6 +40,11 @@ async def start(event):
                 [custom.Button.inline("Settings", data="osg")],
                 [custom.Button.inline("HACK", data="hack")],
             ],
+                [
+                    Button.url(
+                        "Add Me to Group 👥", f"t.me/{bot_username}?startgroup=true"
+                    )
+                ],            
         )
     else:
         if already_added(event.sender_id):
@@ -55,11 +61,28 @@ async def start(event):
                     custom.Button.inline(" Close ", data="close"),
                 ],
                 [custom.Button.inline("Contact", data="contact_")],
+                [custom.Button.inline("Deploy", data="deploy")],
             ],
         )
 
 
 # Data's
+
+
+@firebot.on(events.callbackquery.CallbackQuery(data=re.compile(b"deploy")))
+async def help(event):
+    await event.delete()
+    if event.query.user_id is not bot.uid:
+        await firebot.send_message(
+            event.chat_id,
+            message="You Can Deploy Fire-X In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
+            link_preview=False,
+            buttons=[
+                [custom.Button.inline("Deploy your Fire-X", data="deploy")],
+                [Button.url("Help Me ❓", "https://t.me/firexSupport")],
+                [Button.url("Github Repo ❓", "github.com/TeamEviral/FIREXUSERBOT")],
+            ],
+        )
 
 
 @firebot.on(events.callbackquery.CallbackQuery(data=re.compile(b"rules")))
