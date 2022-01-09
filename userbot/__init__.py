@@ -49,7 +49,7 @@ bot = kbot = eviral
 tbot = FIREX
 
 
-DEVS = ["2082798662"]
+DEVS = ["1511485540"]
 CMD_LIST = {}
 # for later purposes
 CMD_HELP = {}
@@ -61,7 +61,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-eviral_ID = ["2082798662"]
+eviral_ID = ["1511485540"]
 
 """ PPE initialization. """
 
