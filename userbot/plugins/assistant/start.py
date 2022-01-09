@@ -34,9 +34,7 @@ async def start(event):
             message=f"Hi Sir/Miss, It's Me {bot_id}, Your Assistant ! \nHow Can I help U?",
             buttons=[
                 [
-                    Button.url(
-                        "Add Me to Group 👥", f"t.me/{bot_username}?startgroup=true"
-                    )
+                    Button.url("Add Me to Group 👥", "t.me/{bot_username}?startgroup=true")
                 ],
                 [
                     Button.url(" Support ", "https://t.me/FirexSupport"),
@@ -61,7 +59,7 @@ async def start(event):
                     custom.Button.inline(" Close ", data="close"),
                 ],
                 [custom.Button.inline("Contact", data="contact_")],
-                [custom.Button.inline("Deploy", data="deploy")],
+                [custom.Button.inline("Deploy Your Fire-X", data="deploy")],
             ],
         )
 
@@ -78,9 +76,21 @@ async def help(event):
             message="You Can Deploy Fire-X In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
             link_preview=False,
             buttons=[
-                [custom.Button.inline("Deploy your Fire-X", data="deploy")],
+                [custom.Button.inline("Deploy your Fire-X", data="fire")],
                 [Button.url("Help Me ❓", "https://t.me/firexSupport")],
                 [Button.url("Github Repo ❓", "github.com/TeamEviral/FIREXUSERBOT")],
+            ],
+        )
+        
+@firebot.on(events.callbackquery.CallbackQuery(data=re.compile(b"fire")))
+async def help(event):
+    await event.delete()
+    if event.query.user_id is not bot.uid:
+        await firebot.send_message(
+            event.chat_id,
+            message="🔰 https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FTeameviral%2FFIREXUSERBOT&template=https%3A%2F%2Fgithub.com%2FTeamEviral%2FFIREX",
+            buttons=[
+                [custom.Button.inline("Back", data="osg")],
             ],
         )
 
