@@ -10,6 +10,8 @@ from userbot import *
 from userbot.Config import Config
 
 from . import *
+import heroku3
+import requests
 
 
 # try
