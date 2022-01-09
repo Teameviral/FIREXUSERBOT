@@ -185,7 +185,7 @@ async def upstream(event):
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if changelog == "" and not force_update:
         await event.edit(
-            "\n**😎 FIRE-X is UP-TO-DATE.**"
+            "\n**😎 FIRE-X is Already A Latest .**"
             f"\n\n**Version :**  {eviralversion}"
             f"\n**Owner :**  {eviral_mention}"
             "\nRelease Date : 16 December 2021"
@@ -199,7 +199,7 @@ async def upstream(event):
 
     if force_update:
         await event.edit(
-            "\n**😎 FIRE-X is UP-TO-DATE.**"
+            "\n**😎 FIRE-X is Already Latest**"
             f"\n\n**Version :**  {eviralversion}"
             f"\n**Owner :**  {eviral_mention}"
             "\nRelease Date : 16 December 2021"
