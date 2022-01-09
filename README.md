@@ -2,7 +2,7 @@
 <p align="center">
    
    <a href="https://github.com/TeamEviral/Fire-X">
-      <img src="https://telegra.ph/file/4fd8dcd5319be4e025022.jpg" alt="firex", height="300px",width="300px">
+      <img src="https://telegra.ph/file/b76f4a906f05c059e046a.jpg" alt="firex", height="300px",width="500px">
    </a>
    <br>
    <b>Fire-X UserBot</b><br>
@@ -11,7 +11,7 @@
  
 ## ᑈֆօƈɨǟʟ ՏԵɑԵմՏ օƒ ɮօԵ ᐵ 
 
-<p align="left"><a href="https://github.com/TeamEviral/Fire-X/network/members"><img src="https://img.shields.io/github/forks/TeamEviral/Fire-X?label=Forks&logoColor=purple&style=social"></a><p align="left"><a href="https://github.com/TeamEviral/Fire-X/stargazers"><img src="https://img.shields.io/github/stars/TeamEviral/Fire-X?logoColor=red&style=social"></a><p align="left"><a href="https://github.com/TeamEviral/Fire-X"><img src="https://img.shields.io/github/last-commit/TeamEviral/Fire-X?logoColor=brown&style=plastic"></a>
+<p align="left"><a href="https://github.com/TeamEviral/FIREXUSERBOT/network/members"><img src="https://img.shields.io/github/forks/TeamEviral/FIREXUSERBOT?label=Forks&logoColor=purple&style=social"></a><p align="left"><a href="https://github.com/TeamEviral/FIREXUSERBOT/stargazers"><img src="https://img.shields.io/github/stars/TeamEviral/FIREXUSERBOT?logoColor=red&style=social"></a><p align="left"><a href="https://github.com/TeamEviral/FIREXUSERBOT"><img src="https://img.shields.io/github/last-commit/TeamEviral/FIREXUSERBOT?logoColor=brown&style=plastic"></a>
    
 # [Fire-X](https://t.me/FireXUb) userbot
 
