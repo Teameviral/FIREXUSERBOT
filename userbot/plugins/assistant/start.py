@@ -75,7 +75,8 @@ async def help(event):
             ],
         )
     context.bot.answer_callback_query(query.id)
-    
+
+
 @firebot.on(events.callbackquery.CallbackQuery(data=re.compile(b"contact_")))
 async def help(event):
     if event.query.user_id == bot.uid:
@@ -88,7 +89,7 @@ async def help(event):
                 [custom.Button.inline("Back", data="osg")],
             ],
         )
-    context.bot.answer_callback_query(query.id) 
+    context.bot.answer_callback_query(query.id)
 
 
 # Bot Permit.
