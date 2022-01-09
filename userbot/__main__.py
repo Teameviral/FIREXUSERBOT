@@ -16,7 +16,7 @@ from .start import abuses, addons, assistants, hekp, install, module, spams
 
 l1 = Config.COMMAND_HAND_LER
 l2 = Config.SUDO_COMMAND_HAND_LER
-eviral_PIC = "https://telegra.ph/file/e753315316673cff51085.mp4"
+eviral_PIC = "https://telegra.ph/file/b76f4a906f05c059e046a.jpg"
 
 perf = "[ †hê FIRE-X ]"
 
