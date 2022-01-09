@@ -54,7 +54,7 @@ async def start(event):
                     custom.Button.inline(" Rules ", data="rules"),
                     custom.Button.inline(" Close ", data="close"),
                 ],
-                [custom.Button.inline("Contact Us", data="v_hack")],
+                [custom.Button.inline("Contact Us", data="contact_")],
             ],
         )
 
