@@ -31,6 +31,18 @@ It is not like the other bots which are being Suspended by Heroku. Hence, it can
 - Fork the [Repo](https://github.com/Teameviral/FIREX) First.
 - Then go README.md and replace `Teameviral` to your forked github username.
    
+### Get API_ID AND API_HASH 
+ŦEŁEGŘλM 
+𝙰𝙿𝙿 𝙸𝙳 & 𝙰𝙿𝙸 𝙷𝙰𝚂𝙷 
+FROM 
+ ⤵
+   </p><p align="centre"><a href="https://my.telegram.org"> <img src="https://img.shields.io/badge/via_WEBSITE-APP_ID API_HASH-blue?style=for-the-badge&logo=telegram" alt="APIHASH" /></a> 
+
+### SESSION STRING 
+<a href="https://replit.com/@Teameviral/Firex-1#main.py"><img alt="Run on Repl.it" src="https://camo.githubusercontent.com/05149b448485553c6f14f6430a45c12dcc79ed3c/68747470733a2f2f7265706c2e69742f62616467652f6769746875622f6a61727669733231303930342f4a6172766973" style="border-style: none; box-sizing: initial; max-width: 100%;" /></a></div>
+#### SAFE TO USE 😌
+
+   
 ## Unique Features
    - Easy to Deploy at any server except Railway.
    - Completely Hacked Free. None can get your string until you give them directly.
