@@ -49,10 +49,10 @@ async def updateme_requirements():
 
 @bot.on(admin_cmd(outgoing=True, pattern="update"))
 @bot.on(sudo_cmd(pattern="update", allow_sudo=True))
-async def upstream(ups):
+async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
-    await ups.edit("** Checking for new updates 🧐🧐**")
-    conf = ups.pattern_match.group(1)
+    await event.edit("** Checking for new updates 🧐🧐**")
+    conf = event.pattern_match.group(1).strip()
     off_repo = UPSTREAM_REPO_URL
     force_updateme = False
 
@@ -61,16 +61,16 @@ async def upstream(ups):
         txt += "some problems occured`\n\n**LOGTRACE:**\n"
         repo = Repo()
     except NoSuchPathError as error:
-        await ups.edit(f"{txt}\n`directory {error} is not found`")
+        await event.edit(f"{txt}\n`directory {error} is not found`")
         repo.__del__()
         return
     except GitCommandError as error:
-        await ups.edit(f"{txt}\n`Early failure! {error}`")
+        await event.edit(f"{txt}\n`Early failure! {error}`")
         repo.__del__()
         return
     except InvalidGitRepositoryError as error:
         if conf != "now":
-            await ups.edit(
+            await event.edit(
                 f"**Sync-Verification required since the directory {error} does not seem to be a git repository.\
                 \nSync-Verify now with {GIT_REPO_NAME}\
             \nTo do This type** `.update now`."
@@ -86,7 +86,7 @@ async def upstream(ups):
 
     ac_br = repo.active_branch.name
     if ac_br != "main":
-        await ups.edit(
+        await event.edit(
             f"**[UPDATER]:**` Looks like you are using your own custom branch ({ac_br}). "
             "in that case, Updater is unable to identify "
             "which branch is to be merged. "
@@ -100,13 +100,13 @@ async def upstream(ups):
     except BaseException:
         pass
 
-    ups_rem = repo.remote("upstream")
-    ups_rem.fetch(ac_br)
+    event_rem = repo.remote("upstream")
+    event_rem.fetch(ac_br)
 
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
 
     if not changelog and not force_updateme:
-        await ups.edit(
+        await event.edit(
             f"\nBot is  **up-to-date**  `with`  **[[{ac_br}]]({UPSTREAM_REPO_URL}/tree/{ac_br})**\n"
         )
         repo.__del__()
@@ -119,25 +119,25 @@ async def upstream(ups):
             + f"{changelog}"
         )
         if len(changelog_str) > 4096:
-            await ups.edit("`Changelog is too big, view the file to see it.`")
+            await event.edit("`Changelog is too big, view the file to see it.`")
             file = open("output.txt", "w+")
             file.write(changelog_str)
             file.close()
-            await ups.client.send_file(
-                ups.chat_id,
+            await event.bot.send_file(
+                event.chat_id,
                 "output.txt",
                 reply_to=ups.id,
             )
             remove("output.txt")
         else:
-            await ups.edit(changelog_str)
-        await ups.respond(f"Do `.update now` to update")
+            await event.edit(changelog_str)
+        await event.respond(f"Do `.update now` to update")
         return
 
     if force_updateme:
-        await ups.edit("`Force-Updating to latest stable code, please wait sur😅😅...`")
+        await event.edit("`Force-Updating to latest stable code, please wait sur😅😅...`")
     else:
-        await ups.edit(
+        await event.edit(
             "`Updating your` **ßoott** `please wait for 5 mins then type .alive/.ping/.help/.test to see if I am On...`"
         )
     # We're in a Heroku Dyno, handle it's memez.
@@ -148,7 +148,7 @@ async def upstream(ups):
         heroku_app = None
         heroku_applications = heroku.apps()
         if not config.HEROKU_APP_NAME:
-            await ups.edit(
+            await event.edit(
                 "`Please set up the HEROKU_APP_NAME configiable to be able to update FiReX`"
             )
             repo.__del__()
@@ -158,16 +158,16 @@ async def upstream(ups):
                 heroku_app = app
                 break
         if heroku_app is None:
-            await ups.edit(f"{txt}\n`Invalid Heroku credentials for updating.`")
+            await event.edit(f"{txt}\n`Invalid Heroku credentials for updating.`")
             repo.__del__()
             return
-        await ups.edit(
+        await event.edit(
             "`Updating Started 😎😎✨\nRestarting, please wait 5min then type .alive to check if I alive!!!🙂`"
         )
-        ups_rem.fetch(ac_br)
+        event_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
         heroku_git_url = heroku_app.git_url.replace(
-            "https://", "https://api:" + config.HEROKU_API_KEY + "@"
+            "https://", "https://api:" + Config.HEROKU_API_KEY + "@"
         )
         if "heroku" in repo.remotes:
             remote = repo.remote("heroku")
@@ -177,21 +177,21 @@ async def upstream(ups):
         try:
             remote.push(refspec="HEAD:refs/heads/master", force=True)
         except GitCommandError as error:
-            await ups.edit(f"{txt}\n`Here is the error log:\n{error}`")
+            await event.edit(f"{txt}\n`Here is the error log:\n{error}`")
             repo.__del__()
             return
-        await ups.edit(
+        await event.edit(
             "`Sync Verified Successfully 🙂🙂\n"
             "Restarting, please wait a min ,then type .alive to check if I alive 😂!!`"
         )
     else:
         # Classic Updater, pretty straightforward.
         try:
-            ups_rem.pull(ac_br)
+            event_rem.pull(ac_br)
         except GitCommandError:
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
-        await ups.edit(
+        await event.edit(
             "`Successfully Updated!\n" "Bot is restarting... Wait for a minute😎😎!`"
         )
         # Spin a new instance of bot
