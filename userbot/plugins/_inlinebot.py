@@ -286,8 +286,17 @@ if Config.BOT_USERNAME is not None and firebot is not None:
                 title="Repository",
                 text=f"**⚜  FIRE_X ⚜**",
                 buttons=[
-                    [Button.url("♥️ Session ♥", "https://replit.com/@Teameviral/Firex-1#main.py")],
-                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/Teameviral/FIREXUSERBOT")],
+                    [
+                        Button.url(
+                            "♥️ Session ♥",
+                            "https://replit.com/@Teameviral/Firex-1#main.py",
+                        )
+                    ],
+                    [
+                        Button.url(
+                            "📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/Teameviral/FIREXUSERBOT"
+                        )
+                    ],
                     [
                         Button.url(
                             "💞 Deploy 💞",
