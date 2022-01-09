@@ -322,7 +322,7 @@ print(
 ║┣⪼ Group - @FirexSupport
 ║┣⪼ CREATOR - @Eviral
 ║┣⪼ FIREX - {eviralversion}
-║┣⪼ ✨ 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
+║┣⪼ ✨ 『🔱 � FIREX � 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱"""
 )
