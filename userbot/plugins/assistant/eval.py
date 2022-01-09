@@ -1,26 +1,19 @@
-from telethon import events
-import asyncio
-from time import sleep
-import re, os
-import asyncio
-import traceback
 import io
-import os
 import sys
-import time
-from telethon.tl import functions
-from telethon.tl import types
-from telethon.tl.types import *
+import traceback
+
+from telethon import events
 from telethon.errors import *
-from userbot.Config import Config
+from telethon.tl.types import *
+
 from userbot import bot
 
 bot = firebot
-p= print
-
+p = print
 
 
 #
+
 
 async def aexec(code, event):
     exec(
@@ -33,17 +26,16 @@ async def aexec(code, event):
 
     return await locals()["__aexec"](event, event.client)
 
+
 @firebot.on(events.NewMessage(pattern="/eval"))
 @god_only
 async def _(event):
     rk = await event.reply("`....`")
     try:
-      cmd = event.text.split(" ", maxsplit=1)[1]
+        cmd = event.text.split(" ", maxsplit=1)[1]
     except IndexError:
-      return await rk.edit("`No Python Command Was Given`")
-    p = print
-    e = event
-    cmd = event.text.split(" ", maxsplit=1)[1] 
+        return await rk.edit("`No Python Command Was Given`")
+    cmd = event.text.split(" ", maxsplit=1)[1]
     reply_to_id = event.message.id
     if event.reply_to_msg_id:
         reply_to_id = event.reply_to_msg_id
@@ -72,7 +64,7 @@ async def _(event):
         evaluation = stdout
     else:
         evaluation = "Sᴜᴄᴄᴇss"
-    final_output = "**Eᴠᴀʟ:**\n`{}`\n\n**Oᴜᴛᴘᴜᴛ:**\n`{}`".format(cmd,evaluation)
+    final_output = "**Eᴠᴀʟ:**\n`{}`\n\n**Oᴜᴛᴘᴜᴛ:**\n`{}`".format(cmd, evaluation)
     MAX_MESSAGE_SIZE_LIMIT = 4095
     if len(final_output) > MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(final_output)) as out_file:
