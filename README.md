@@ -14,6 +14,7 @@
 <p align="left"><a href="https://github.com/TeamEviral/FIREXUSERBOT/network/members"><img src="https://img.shields.io/github/forks/TeamEviral/FIREXUSERBOT?label=Forks&logoColor=purple&style=social"></a><p align="left"><a href="https://github.com/TeamEviral/FIREXUSERBOT/stargazers"><img src="https://img.shields.io/github/stars/TeamEviral/FIREXUSERBOT?logoColor=red&style=social"></a><p align="left"><a href="https://github.com/TeamEviral/FIREXUSERBOT"><img src="https://img.shields.io/github/last-commit/TeamEviral/FIREXUSERBOT?logoColor=brown&style=plastic"></a>
    
 ## Star The [Repo](https://github.com/TeamEviral/FIREXUSERBOT/stargazers) Now.
+   - Don't forget to star this repo. It motivates us to contribute more for you.
    
 # [Fire-X](https://t.me/FireXUb) userbot
 
@@ -30,4 +31,11 @@ It is not like the other bots which are being Suspended by Heroku. Hence, it can
 - Fork the [Repo](https://github.com/Teameviral/FIREX) First.
 - Then go README.md and replace `Teameviral` to your forked github username.
    
-
+## Unique Features
+   - Easy to Deploy at any server except Railway.
+   - Completely Hacked Free. None can get your string until you give them directly.
+   - Easy Update System
+   - Fully Open Source. We don't hide anything from you.
+   - 900+ Plugins.
+   
+## Old Repo is [Here](https://github.com/TeamEviral/Fire-X)
