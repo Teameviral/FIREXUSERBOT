@@ -37,7 +37,7 @@ async def start(event):
                     Button.url(" Updates ", "https://t.me/FIREXUB"),
                 ],
                 [custom.Button.inline("Settings", data="osg")],
-                [custom.Button.inline("HELP", data="hack")],
+                [custom.Button.inline("HACK", data="hack")],
             ],
         )
     else:
@@ -54,7 +54,7 @@ async def start(event):
                     custom.Button.inline(" Rules ", data="rules"),
                     custom.Button.inline(" Close ", data="close"),
                 ],
-                [custom.Button.inline(" Hack ", data="v_hack")],
+                [custom.Button.inline("Contact Us", data="v_hack")],
             ],
         )
 
@@ -74,6 +74,21 @@ async def help(event):
                 [custom.Button.inline("Back", data="osg")],
             ],
         )
+    context.bot.answer_callback_query(query.id)
+    
+@firebot.on(events.callbackquery.CallbackQuery(data=re.compile(b"contact_")))
+async def help(event):
+    if event.query.user_id == bot.uid:
+        await event.answer("This Is Not For U My Master", cache_time=0, alert=True)
+    else:
+        await firebot.send_message(
+            event.chat_id,
+            message="🔰 Sᴇɴᴅ Uʀ Mᴇꜱꜱᴀɢᴇꜱ Hᴇʀᴇ �",
+            buttons=[
+                [custom.Button.inline("Back", data="osg")],
+            ],
+        )
+    context.bot.answer_callback_query(query.id) 
 
 
 # Bot Permit.
@@ -144,7 +159,7 @@ async def starkisnoob(event):
 
 @firebot.on(events.NewMessage(pattern="^/help", func=lambda e: e.sender_id == bot.uid))
 async def starkislub(event):
-    grabonx = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /hack- hack anyone through string session \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot"
+    grabonx = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /hack- hack anyone through string session \n➤ \eval - run an assync code \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot"
     await event.reply(grabonx)
 
 
