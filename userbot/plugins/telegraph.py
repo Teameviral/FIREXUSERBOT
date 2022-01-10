@@ -20,7 +20,7 @@ async def _(event):
     if event.fwd_from:
         return
     if Config.LOGGER_ID is None:
-        await eod(event, "You need to setup `LOGGER_ID` to use telegraph...", 7)
+        await eod(event, "You need to setup `LOGGER_ID` to use telegraph")
         return
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
@@ -35,7 +35,7 @@ async def _(event):
             )
             end = datetime.datetime.now()
             ms = (end - start).seconds
-            await edit_or_reply(
+            await eor(
                 event,
                 "Downloaded to  `{}`  in  `{}`  seconds. \nMaking Telegraph Link.....".format(
                     downloaded_file_name, ms
