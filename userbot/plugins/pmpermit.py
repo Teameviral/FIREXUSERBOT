@@ -11,7 +11,7 @@ from userbot.utils import admin_cmd
 
 from . import *
 
-WARN_PIC = Config.PM_PIC or "https://te.legra.ph/file/0c605739ddaa472cad75f.jpg"
+WARN_PIC = Config.PM_PIC or "https://telegra.ph/file/b76f4a906f05c059e046a.jpg"
 max_flood = Config.MAX_FLOOD_IN_PM
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
@@ -22,7 +22,7 @@ CSTM_PMP = (
 )
 eviral_ZERO = "Go get some sleep retard. \n\n**Blocked !!**"
 eviral_FIRST = (
-    "**🔥 eviralBo† Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nThis is to inform you that "
+    "**🔥 Firex Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nThis is to inform you that "
     "{} is currently unavailable.\nThis is an automated message.\n\n"
     "{}\n\n**{}Please Choose Why You Are Here!!**".format(
         eviral_mention, CSTM_PMP, max_flood
