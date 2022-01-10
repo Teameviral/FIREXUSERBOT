@@ -216,7 +216,7 @@ async def install(event):
     o = stdout.decode()
     _o = o.split("\n")
     o = "\n".join(_o)
-    OUTPUT = f"♥️List Of Plugins In 𝖑𝖊ɠêɳ̃dẞø✞︎ 🇮🇳 :- \n\n{o}\n\n<><><><><><><><><><><><><><><><><><><><><><><><>\nHELP:- If you want to know the commands for a plugin, do :- \n.plinfo <plugin name> without the < > brackets. \nJoin https://t.me/FirexSupport for help."
+    OUTPUT = f"♥️List Of Plugins In FIRE-X 🇮🇳 :- \n\n{o}\n\n<><><><><><><><><><><><><><><><><><><><><><><><>\nHELP:- If you want to know the commands for a plugin, do :- \n.plinfo <plugin name> without the < > brackets. \nJoin https://t.me/FirexSupport for help."
     if len(OUTPUT) > 69:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "cmnds_list.text"
@@ -230,7 +230,7 @@ async def install(event):
             )
             await edit_or_reply(
                 eviral_file,
-                f"**Output Too Large. This is the file for the list of plugins in L𝖊ɠêɳ̃dẞø✞︎**.\n\nBY :- **{DEFAULTUSER}**",
+                f"**Output Too Large. This is the file for the list of plugins in FIRE-X**.\n\nBY :- **{DEFAULTUSER}**",
             )
             await event.delete()
 
