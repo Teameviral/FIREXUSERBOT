@@ -26,12 +26,12 @@ pm_caption = "**𝖑𝖊ɠêɳ̃dẞø✞︎ 𝙸𝚜 𝙾𝚗𝚕𝚒𝚗𝚎**
 pm_caption += f"**┏🔥✞t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎t🔥┓**\n"
 pm_caption += f"**┣🚀 𝙼𝚢 𝙼𝚊𝚜𝚝𝚎𝚛    : {mention}**\n"
 pm_caption += f"**┣🚀 𝚃𝚎𝚕𝚎𝚝𝚑𝚘𝚗 : `{version.__version__}`**\n"
-pm_caption += f"**┣🚀 𝖑𝖊ɠêɳ̃dẞø✞︎ : {eviralversion}**\n"
+pm_caption += f"**┣🚀 FIRE-X : {eviralversion}**\n"
 pm_caption += f"**┣🚀 𝚂𝚞𝚍𝚘     : `{sudou}`**\n"
 pm_caption += f"**┣🚀 𝙾𝚠𝚗𝚎𝚛     : [𝖑𝖊ɠêɳ̃d](https://t.me/Eviral)**\n"
 pm_caption += f"**┗[♦️𝙶𝚛𝚘𝚞𝚙♦️](https://t.me/FirexSupport)┛**\n"
 
-pm_caption += "    [✨яєρο✨](https://github.com/Teameviral/FIREX) 🔹 [📜License📜](https://github.com/Teameviral/FIREX/blob/master/LICENSE)"
+pm_caption += "    [✨яєρο✨](https://github.com/Teameviral/FIREX) 🔹 [📜License📜](https://github.com/Teameviral/FIREX/blob/main/LICENSE)"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="bot$"))
