@@ -42,7 +42,7 @@ def get_readable_time(seconds: int) -> str:
 
 uptime = get_readable_time((time.time() - StartTime))
 DEFAULTUSER = ALIVE_NAME or "FIRE-X 🇮🇳"
-eviral_IMG = "https://telegra.ph/file/b76f4a906f05c059e046a.jpg"
+eviral_IMG = Config.ALIVE_PIC "https://telegra.ph/file/b76f4a906f05c059e046a.jpg"
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "FIREX Choice"
 CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@FirexSupport"
 
