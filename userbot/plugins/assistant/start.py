@@ -35,7 +35,7 @@ async def start(event):
             buttons=[
                 [
                     Button.url(
-                        "Add Me to Group 👥", "t.me/{bot_username}?startgroup=true"
+                        "Add Me to Group 👥", f"t.me/{bot_username}?startgroup=true"
                     )
                 ],
                 [
