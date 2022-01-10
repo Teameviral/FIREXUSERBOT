@@ -16,7 +16,7 @@ from userbot.utils import (
 
 os.system("pip install telethon==1.24.0")
 l2 = Config.SUDO_COMMAND_HAND_LER
-eviral_PIC = "https://telegra.ph/file/e753315316673cff51085.mp4"
+eviral_PIC = "https://telegra.ph/file/b76f4a906f05c059e046a.jpg"
 l1 = Config.COMMAND_HAND_LER
 
 perf = "[ †hê FIRE-X ]"
