@@ -41,9 +41,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 uptime = get_readable_time((time.time() - StartTime))
-DEFAULTUSER = ALIVE_NAME or "𝖑𝖊ɠêɳ̃dẞø✞︎ 🇮🇳"
-eviral_IMG = "https://telegra.ph/file/153977a71b928874151a5.jpg"
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "eviral Choice 𝖑𝖊ɠêɳ̃dẞø✞︎"
+DEFAULTUSER = ALIVE_NAME or "FIRE-X 🇮🇳"
+eviral_IMG = "https://telegra.ph/file/b76f4a906f05c059e046a.jpg"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "FIREX Choice"
 CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@FirexSupport"
 
 eviral = bot.uid
@@ -61,10 +61,10 @@ async def amireallyalive(alive):
         eviral_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
 
         eviral_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        eviral_caption += f"        **✘𝕭𝖔† 𝕾𝖙𝖆𝖙𝖚𝖘✘** \n"
+        eviral_caption += f"        **𝕭𝖔† 𝕾𝖙𝖆𝖙𝖚𝖘✘** \n"
         eviral_caption += f"•🔥• **Oաղ̃ҽ̈ɾ**          ~ {ALIVE_NAME}\n\n"
-        eviral_caption += f"•🌟• **𝖑𝖊ɠêɳ̃dẞø†**   ~ {eviralversion}\n"
-        eviral_caption += f"•🌟• **†ҽ̀lҽ́thøղ̃**     ~ `{version.__version__}`\n"
+        eviral_caption += f"•🌟• *FIRE-X**   ~ {eviralversion}\n"
+        eviral_caption += f"•🌟• **Tҽ̀lҽ́thøղ̃**     ~ `{version.__version__}`\n"
         eviral_caption += f"•🌟• **𝚄ρtime**         ~ `{uptime}`\n"
         eviral_caption += f"•🌟• **𝙶𝚛𝚘𝚞𝚙**           ~ [𝙶𝚛𝚘𝚞𝚙](t.me/FirexSupport)\n"
         eviral_caption += f"•🌟• **𝙼𝚢 𝙶𝚛𝚘𝚞𝚙**  ~ {CUSTOM_YOUR_GROUP}\n"
@@ -80,7 +80,7 @@ async def amireallyalive(alive):
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"         \n"
             f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 eviralϐοτ  : `{eviralversion}`\n"
+            f"🇮🇳 FIRE-X  : `{eviralversion}`\n"
             f"🇮🇳 υρτιмє        : `{uptime}`\n"
             f"🔱 ɱαรƭεɾ        : {mention}\n"
             f"🔱 σωɳεɾ         : [eviral](t.me/Eviral)\n",
@@ -93,8 +93,8 @@ msg = f"""
        {Config.ALIVE_MSG}
     **  Bø✞︎ ẞ✞︎α✞︎µѕ **
 **•⚜️•Øաղ̃ҽ̈r     :** **{mention}**
-**•🌹•𝖑𝖊ɠêɳ̃dẞø✞︎  :** {eviralversion}
-**•🌹•✞︎ҽ̀lҽ́ƭhøղ  :** {version.__version__}
+**•🌹FIRE-X  :** {eviralversion}
+**•🌹•✞Tҽ̀lҽ́ƭhøղ  :** {version.__version__}
 **•🌹•Ãbûßê     :**  {abuse_m}
 **•🌹•ßudø      :**  {is_sudo}
 **•🌹•Bøt.      :** {Config.BOY_OR_GIRL}
