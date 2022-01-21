@@ -24,6 +24,7 @@ class Var(object):
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
+    TEMPLATE_PIC = os.environ.get("TEMPLATE_PIC", None)
     DOWNLOAD_PFP_URL_CLOCK = os.environ.get("DOWNLOAD_PFP_URL_CLOCK", None)
     PM_PERMIT_GROUP_ID = os.environ.get("PM_PERMIT_GROUP_ID", None)
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID", None)
